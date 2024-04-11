@@ -21,7 +21,7 @@ if (localStorage.getItem('feedback-form-state')) {
   email.value = emailData;
   message.value = messageData;
 }
-const button = document.querySelector('submit');
+const button = document.querySelector('button');
 const clearDataStorage = event => {
   event.preventDefault();
   console.log(JSON.parse(localStorage.getItem('feedback-form-state')));
